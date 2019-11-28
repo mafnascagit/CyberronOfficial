@@ -1,0 +1,41 @@
+.Card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    flex-wrap: wrap;
+    background: black;
+    transition: 500ms ease;
+    border: none;
+    outline: none;
+
+    .title {
+        color: white;
+        font-size: 2.4rem;
+        font-weight: bold;
+        position: absoulte;
+        z-index: 2;
+        letter-spacing: 1.5px;
+        font-family: none;
+    }
+
+    .image {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        transition: 500ms ease;
+
+        &:hover {
+            // transform: scale(1.05);
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+}
