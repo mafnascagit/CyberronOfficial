@@ -1,0 +1,46 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgb(25, 26, 26), rgb(0, 0, 0));
+    color: white;
+    height: 80px;
+    font-size: .8rem;
+    margin-top: 20px;
+    animation: hide 1s ease-in-out;
+}
+
+.legalNav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 170px;
+}
+
+.link-Item:hover {
+    cursor: pointer;
+}
+
+/* .legalLinks {
+    display: flex;
+    flex-direction: row;
+    background: red;
+    width: 500px;
+} */
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none !important;
+    }
+}
+
+@keyframes hide {
+    0% {
+       display: none;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

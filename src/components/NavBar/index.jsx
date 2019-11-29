@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { COMPANY_NAME } from "../../configs";
-import "./style.scss";
+import "./style.css";
 
 class NavBar extends Component {
   constructor() {

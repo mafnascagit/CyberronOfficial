@@ -1,0 +1,21 @@
+.MobileUnderConstruction {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, .3));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: 6rem;
+}
+
+.mobileMessage {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .MobileUnderConstruction {
+        height: 812px !important;
+    }
+}

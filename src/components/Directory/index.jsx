@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Card from "../Card";
+import Cards from "../Cards";
 import Office from "../../images/office.jpg";
 import Tunnel from "../../images/tunnel.jpg";
 import Cyber from "../../images/cyber.jpg";
 import City from '../../images/city.jpg';
-import "./style.scss";
+import "./style.css";
 
 class Directory extends Component {
   constructor() {
@@ -13,7 +13,7 @@ class Directory extends Component {
       cards: [
         {
           id: 1,
-          title: "Explore our Services",
+          title: "View Services",
           img: `${City}`
         },
         {
@@ -34,9 +34,7 @@ class Directory extends Component {
     return (
       <React.Fragment>
         <div className="Directory">
-          {this.state.cards.map(card => {
-            return <Card image={card.img} title={card.title} />;
-          })}
+          <Cards />;
         </div>
       </React.Fragment>
     );

@@ -1,0 +1,59 @@
+.Card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 300px;
+    width: 500px;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    transition: 300ms ease-in-out;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 20px 6px rgba(255, 255, 255, .19);
+    backface-visibility: hidden;
+}
+
+.Card.city {
+    background-image: url(../../images/city.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Card.phone {
+    background-image: url(../../images/tunnel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Card.office {
+    background-image: url(../../images/office.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Card .title {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    position: absoulte;
+    z-index: 2;
+    letter-spacing: 1.5px;
+    font-family: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Card:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1024px) {
+    .Card {
+     
+        width: 350px; 
+    }
+}

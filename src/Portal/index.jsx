@@ -1,15 +1,18 @@
-import React, {Component} from 'react'; 
-import {HashRouter,  Route, Switch, Redirect} from 'react-router-dom'; 
-import LandingPage from '../pages/LandingPage'; 
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer'; 
+import React, { Component } from "react";
+import { HashRouter, Route, Switch, Redirect, Router, BrowserRouter} from "react-router-dom";
+import { history } from "../history";
+import LandingPage from "../pages/LandingPage";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import MobileUnderContruction from "../pages/MobileUnderContruction";
+import {LOCAL} from '../configs';
 
 class Portal extends Component {
   constructor() {
     super();
     this.state = {
       isLoading: false,
-      isAuthenticated: false, 
+      isAuthenticated: false
     };
   }
 
@@ -18,23 +21,36 @@ class Portal extends Component {
   }
 
   render() {
-      return (
-        <React.Fragment>
-          <NavBar/>
-          <HashRouter>
-            <Switch>
-              <Route exact path="/" component={LandingPage} />
-              {!this.state.isAuthenticated ? (
-                <Redirect to="/" />
-              ) : (
-                <Redirect to="/adminPage" />
-              )}
-            </Switch>
-          </HashRouter>
-          <Footer/>
-        </React.Fragment>
-      );
+    return (
+      <React.Fragment>
+        <NavBar />
+        <HashRouter history={history}>
+          <Switch>
+            <Route exact path="/landing" component={LandingPage} />
+            <Route
+              exact
+              path="/mobileUnderContruction"
+              component={MobileUnderContruction}
+            />
+            {/* {!this.state.isAuthenticated ? (
+              <Redirect to="/" />
+            ) : (
+              <Redirect to="/adminPage" />
+            )} */}
+            {LOCAL == true ? (
+              <Redirect from="/" to="/landing"></Redirect>
+            ) : (
+              <Redirect
+                from="CyberronOfficial/#/"
+                to="CyberronOfficial/#/landing"
+              ></Redirect>
+            )}
+          </Switch>
+        </HashRouter>
+        <Footer />
+      </React.Fragment>
+    );
   }
 }
 
-export default Portal; 
+export default Portal;
