@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d43e87cdf467399b61179fef7c9c7b5",
+    "revision": "9e7ef93486b0dc7106feff9a5127da2a",
     "url": "/CyberronOfficial/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CyberronOfficial/static/css/2.64a99b10.chunk.css"
   },
   {
-    "revision": "bc510d8220d5b22952d2",
-    "url": "/CyberronOfficial/static/css/main.607ee3ce.chunk.css"
+    "revision": "3088ea313f5998b9e3c4",
+    "url": "/CyberronOfficial/static/css/main.5750ff99.chunk.css"
   },
   {
     "revision": "a79b4cd93bf74fbbdde1",
     "url": "/CyberronOfficial/static/js/2.931a7bf6.chunk.js"
   },
   {
-    "revision": "bc510d8220d5b22952d2",
+    "revision": "3088ea313f5998b9e3c4",
     "url": "/CyberronOfficial/static/js/main.22963737.chunk.js"
   },
   {
