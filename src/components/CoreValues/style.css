@@ -1,0 +1,55 @@
+.CoreValues {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 650px;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    background: rgba(11, 94, 97, 0.103);
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5);
+    transition: 100ms ease-in-out;
+}
+
+.CoreValues:hover {
+    box-shadow: 0px 0px 10px 5px rgba(190, 140, 1, 0.7);
+    transform: scale(1.02);
+}
+
+.coreTitle {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 0px 30px 6px rgba(255, 255, 255, 0.3);
+}
+
+.innovate.img {
+    background-image: url("../../images/innovate3.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.think.img {
+    background-image: url("../../images/think.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.believe.img {
+    background-image: url("../../images/innovate4.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.jumbotron {
+    background: rgba(77, 78, 78, 0.205) !important;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5);
+}

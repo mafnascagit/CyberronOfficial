@@ -4,14 +4,15 @@
     justify-content: center;
     padding-left: 5px;
     padding-right: 5px;
-    height: 300px;
+    height: 250px;
     width: 500px;
     opacity: 0.7;
     flex-wrap: wrap;
-    transition: 300ms ease-in-out;
-    border: none;
+    transition: 200ms ease-in-out;
+    border-radius: 5px;
     outline: none;
-    box-shadow: 0px 0px 20px 6px rgba(255, 255, 255, .19);
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 20px 6px rgba(231, 231, 230, 0.288);
     backface-visibility: hidden;
 }
 
@@ -19,18 +20,21 @@
     background-image: url(../../images/city.jpg);
     background-size: cover;
     background-position: center;
+    border: 1px solid rgba(255, 255, 255, .5)
 }
 
 .Card.phone {
     background-image: url(../../images/tunnel.jpg);
     background-size: cover;
     background-position: center;
+    border: 1px solid rgba(255, 255, 255, .5)
 }
 
 .Card.office {
     background-image: url(../../images/office.jpg);
     background-size: cover;
     background-position: center;
+    border: 1px solid rgba(255, 255, 255, .5)
 }
 
 .Card .title {
@@ -41,11 +45,12 @@
     z-index: 2;
     letter-spacing: 1.5px;
     font-family: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .Card:hover {
     opacity: 1;
+    box-shadow: 0px 0px 20px 6px rgba(255, 255, 255, 0.9);
     transform: scale(1.1);
     cursor: pointer;
     z-index: 2;
@@ -53,7 +58,6 @@
 
 @media screen and (max-width: 1024px) {
     .Card {
-     
-        width: 350px; 
+        width: 350px;
     }
 }

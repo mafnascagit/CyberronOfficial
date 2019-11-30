@@ -16,10 +16,10 @@ class NavBar extends Component {
       <div className="NavBar">
         <div className="companyName">{COMPANY_NAME}</div>
         <div className=""></div>
-        <div className="navButtons">
+        {/* <div className="navButtons">
           <button>Sign Up</button>
           <button>Login</button>
-        </div>
+        </div> */}
       </div>
     </React.Fragment>);
   }

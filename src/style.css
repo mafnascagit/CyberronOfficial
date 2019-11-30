@@ -7,6 +7,8 @@ body {
     outline: none;
     font-size: 12px;
     animation: open 800ms ease-in-out;
+    display: flex; 
+    flex-direction: column;
     height: 100%;
     width: 100%;
     background: black;

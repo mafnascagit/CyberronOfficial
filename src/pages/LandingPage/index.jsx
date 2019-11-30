@@ -3,6 +3,7 @@ import Directory from '../../components/Directory';
 import {history} from '../..//history';
 import {LOCAL} from '../../configs'; 
 import Spinner from "react-spinner-material";
+import CoreValues from '../../components/CoreValues'; 
 import './style.css'; 
 
 class LandingPage extends Component {
@@ -36,7 +37,7 @@ class LandingPage extends Component {
           this.setState({
               isLoading: false, 
           })
-        }, 4000)
+        }, 2500)
 
         return timer; 
     }
@@ -60,13 +61,17 @@ class LandingPage extends Component {
                 </div>
               </div>
             ) : (
-                <div className="LandingPage">
-                  <div className="banner">
-                    <h1>Innovate. Think. Believe. Cyberron.</h1>
-                    <button className="exploreButton">Innovate Here</button>
-                  </div>
-                  <Directory />
+              <div className="LandingPage">
+                <div className="banner">
+                  <h1>Innovate. Think. Believe. Cyberron.</h1>
+                  <button className="exploreButton">Innovate Here</button>
                 </div>
+                <Directory />
+                <div className="core">
+                  <div className="ourValues">Our Values</div>
+                  <CoreValues />
+                </div>
+              </div>
             )}
           </React.Fragment>
         );
