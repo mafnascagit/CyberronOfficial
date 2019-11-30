@@ -63,8 +63,11 @@ class LandingPage extends Component {
             ) : (
               <div className="LandingPage">
                 <div className="banner">
-                  <h1>Innovate. Think. Believe. Cyberron.</h1>
-                  <button className="exploreButton">Innovate Here</button>
+                  <h1 className="landingTitle">Innovate. Think. Believe. Cyberron.</h1>
+                  <div className="buttons">
+                    <button className="exploreButton">Make a Proposal</button>
+                    <button className="exploreButton">Learn More</button>
+                  </div>
                 </div>
                 <Directory />
                 <div className="core">

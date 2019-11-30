@@ -8,7 +8,13 @@
 
 h1 {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+
+.landingTitle {
+    font-weight: bold;
+    font-size: 3.5rem;
     letter-spacing: 5px;
 }
 
@@ -34,11 +40,11 @@ h1 {
 
 .exploreButton {
     margin-top: 40px;
-    background: rgba(156, 155, 154, 0.558);
-    border: 2px solid rgba(255, 255, 255, .4);
+    background: #725400c4;
+    border: 2px solid rgb(255, 255, 255);
     outline: none;
     border-radius: 6px;
-    color: rgb(255, 255, 248);
+    color: rgb(255, 255, 255);
     padding: 7px;
     font-size: 1.4rem;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
@@ -51,6 +57,7 @@ h1 {
     transform: scale(1.05);
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
     color: rgba(255, 255, 255, 0.8);
+    background: #ffc400;
 }
 
 .exploreButton:focus {
@@ -97,6 +104,13 @@ h1 {
     display: flex;
     flex-direction: column;
     background: black;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-evenly
 }
 
 @keyframes loading {

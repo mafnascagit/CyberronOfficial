@@ -5,6 +5,7 @@ import LandingPage from "../pages/LandingPage";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MobileUnderContruction from "../pages/MobileUnderContruction";
+import UnderConstructionPage from '../pages/UnderConstructionPage';
 import {LOCAL} from '../configs';
 
 class Portal extends Component {
@@ -32,6 +33,12 @@ class Portal extends Component {
               path="/mobileUnderContruction"
               component={MobileUnderContruction}
             />
+            <Route
+                exact 
+                path="/underConstruction"
+                component={UnderConstructionPage}
+            />
+ 
             {/* {!this.state.isAuthenticated ? (
               <Redirect to="/" />
             ) : (
