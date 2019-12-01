@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/CyberronOfficial/static/css/main.eed62883.chunk.css",
-    "main.js": "/CyberronOfficial/static/js/main.d6cdbcf3.chunk.js",
-    "main.js.map": "/CyberronOfficial/static/js/main.d6cdbcf3.chunk.js.map",
+    "main.css": "/CyberronOfficial/static/css/main.651fc35e.chunk.css",
+    "main.js": "/CyberronOfficial/static/js/main.05acf888.chunk.js",
+    "main.js.map": "/CyberronOfficial/static/js/main.05acf888.chunk.js.map",
     "runtime-main.js": "/CyberronOfficial/static/js/runtime-main.ec0255b8.js",
     "runtime-main.js.map": "/CyberronOfficial/static/js/runtime-main.ec0255b8.js.map",
     "static/css/2.64a99b10.chunk.css": "/CyberronOfficial/static/css/2.64a99b10.chunk.css",
-    "static/js/2.ca83881c.chunk.js": "/CyberronOfficial/static/js/2.ca83881c.chunk.js",
-    "static/js/2.ca83881c.chunk.js.map": "/CyberronOfficial/static/js/2.ca83881c.chunk.js.map",
+    "static/js/2.0329f5f8.chunk.js": "/CyberronOfficial/static/js/2.0329f5f8.chunk.js",
+    "static/js/2.0329f5f8.chunk.js.map": "/CyberronOfficial/static/js/2.0329f5f8.chunk.js.map",
     "index.html": "/CyberronOfficial/index.html",
-    "precache-manifest.4d05d4cb0552c4e9847705593af9feb9.js": "/CyberronOfficial/precache-manifest.4d05d4cb0552c4e9847705593af9feb9.js",
+    "precache-manifest.d530ae91f5ac554975b4511203054675.js": "/CyberronOfficial/precache-manifest.d530ae91f5ac554975b4511203054675.js",
     "service-worker.js": "/CyberronOfficial/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/CyberronOfficial/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.eed62883.chunk.css.map": "/CyberronOfficial/static/css/main.eed62883.chunk.css.map",
-    "static/media/style.css": "/CyberronOfficial/static/media/unsplash.4f8f060f.png",
-    "static/media/cyber.jpg": "/CyberronOfficial/static/media/cyber.35ae3963.jpg",
-    "static/media/main.jpg": "/CyberronOfficial/static/media/main.2a540009.jpg"
+    "static/css/main.651fc35e.chunk.css.map": "/CyberronOfficial/static/css/main.651fc35e.chunk.css.map",
+    "static/media/style.css": "/CyberronOfficial/static/media/unsplash.4f8f060f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ec0255b8.js",
     "static/css/2.64a99b10.chunk.css",
-    "static/js/2.ca83881c.chunk.js",
-    "static/css/main.eed62883.chunk.css",
-    "static/js/main.d6cdbcf3.chunk.js"
+    "static/js/2.0329f5f8.chunk.js",
+    "static/css/main.651fc35e.chunk.css",
+    "static/js/main.05acf888.chunk.js"
   ]
 }
