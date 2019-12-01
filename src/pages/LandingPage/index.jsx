@@ -4,6 +4,7 @@ import {history} from '../..//history';
 import {LOCAL} from '../../configs'; 
 import Spinner from "react-spinner-material";
 import CoreValues from '../../components/CoreValues'; 
+import PageLoader from '../../components/PageLoader'; 
 import './style.css'; 
 
 class LandingPage extends Component {
@@ -16,10 +17,7 @@ class LandingPage extends Component {
     }
 
     componentDidMount() {
-        if (this.state.isLoading) {
-           this.activateLoader();
-        }
-
+      
         if (window.screen.width <= 700) {
             this.setState({ 
                isMobile: true, 
@@ -32,14 +30,12 @@ class LandingPage extends Component {
         }
     }
 
-    activateLoader() {
-        const timer = setTimeout(() => {
+    checkIsLoading(isLoading) {
+        if (isLoading == false) {
           this.setState({
-              isLoading: false, 
+            isLoading: false, 
           })
-        }, 2500)
-
-        return timer; 
+        }
     }
 
     render() {
@@ -49,25 +45,17 @@ class LandingPage extends Component {
         return (
           <React.Fragment>
             {this.state.isLoading ? (
-              <div className="pageLoader">
-                <h1 className="loading">Loading</h1>
-                <div>
-                  <Spinner
-                    size={120}
-                    spinnerColor={"#333"}
-                    spinnerWidth={2}
-                    visible={true}
-                  />
-                </div>
+              <div>
+               <PageLoader url='' isLoading={(isLoading) => this.checkIsLoading(isLoading)} />
               </div>
             ) : (
               <div className="LandingPage">
                 <div className="banner">
                   <h1 className="landingTitle">Innovate. Think. Believe. Cyberron.</h1>
-                  <div className="buttons">
+                  {/* <div className="buttons">
                     <button className="exploreButton">Make a Proposal</button>
                     <button className="exploreButton">Learn More</button>
-                  </div>
+                  </div> */}
                 </div>
                 <Directory />
                 <div className="core">

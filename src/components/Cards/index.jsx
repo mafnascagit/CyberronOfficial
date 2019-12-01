@@ -1,6 +1,5 @@
 import React, {Component} from 'react'; 
 // import {Card, CardImg, CardTitle, CardSubtitle, CardText, CardBody, Button} from 'reactstrap';
-import Main from '../../images/main.jpg';
 import {history} from '../../history';
 import './style.css'; 
 

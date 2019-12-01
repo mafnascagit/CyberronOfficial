@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Cards from "../Cards";
 import Office from "../../images/office.jpg";
 import Tunnel from "../../images/tunnel.jpg";
-import Cyber from "../../images/cyber.jpg";
 import City from '../../images/city.jpg';
 import "./style.css";
 
